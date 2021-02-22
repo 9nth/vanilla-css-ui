@@ -52,6 +52,8 @@ border-spacing: 0;
 
 /* Custom CSS */
 
+
+
 div {
   border: 1px solid #000;
   height: 10px;
@@ -65,6 +67,7 @@ border-color: 5px solid red;
 .mobile-nav {
   background-color: grey;
   height: 50px;
+  box-sizing: border-box;
 }
 
 .burger-menu,
@@ -84,16 +87,19 @@ width: 20.7%;
 }
 
 .daily-section {
-  background-color: blue;
+  background-color: #f5f5f5;
   height: 120px;
   height: 30vh;
 }
 
 .current-city {
+  font-size: 20px;
+  font-family: 'open-sans', sans-serif;
   text-transform: uppercase;
   margin-top: 13px;
   margin-bottom:  13px;
-  padding-left: 10px;
+  padding-left: 115px;
+
 }
 
 .weather-image,
@@ -102,6 +108,69 @@ height: 75%;
 float: left;
 width: 49.4%;
 border: none;
+}
+
+.weather-image {
+  width: 45%;
+  float: left;
+  margin-left: 10px;
+}
+
+/* Sun Icon */
+.wi-day-sunny {
+  color: #444444;
+  margin-top: 42px;
+  margin-left: 28px;
+  font-size: 100px;
+}
+
+.weather-info {
+  width: 45%;
+  float: right;
+  margin-right: 10px;
+}
+
+/*  Max Temp and Rain Icon */
+.wi-thermometer,
+.wi-rain {
+  float: right;
+  margin-top: 100px;
+  font-size: 17px;
+}
+
+  /* Max Temp Icon */
+  .wi-thermometer {
+    padding-right: 10px;
+  }
+
+    /* Rain Icon */
+    .wi-rain {
+      padding-right: 10px;
+    }
+
+.max-daily-temp {
+  padding-left: 10px;
+}
+
+.rain-mm {
+  padding-left: 10px;
+}
+
+/* Min Temp and Wind Icons */
+
+.min-daily-temp {
+  padding-left: 10px;
+  padding-right: 15px;
+}
+
+.wind {
+  padding-left: 10px;
+}
+
+.top-icons {
+  font-family: 'open-sans', sans-serif;
+
+
 }
 
 .map-section {

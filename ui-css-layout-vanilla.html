@@ -6,7 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Metservice</title>
   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="css/weather-icons.min.css">
   <link rel="stylesheet" href="css/custom.css">
+
 </head>
 <body>
 
@@ -21,23 +23,37 @@
 
   <!-- Daily Div -->
     <div class="daily-section">
-      <h3 class="current-city">wellington city</h3>
-      <div class="weather-image"></div>
-      <div class="weather-info"></div>
+      <h3 class="current-city">Wellinton City</h3>
+      <div class="weather-image"><i class="wi wi-day-sunny"></i></div>
+      <!-- Right Side -->
+      <div class="weather-info">
+          <p class="top-icons">
+            <!-- Top Row  -->
+            <i class="wi wi-rain"><span class="rain-mm" style="font-family: 'open-sans', sans-serif;">0.0mm</span></i>
+            <i class="wi wi-thermometer"><span class="max-daily-temp" style="font-family: 'open-sans', sans-serif;">22c</span></i>
+
+          </p>
+          <!-- Bottom Row -->
+            <p class="bottom-icons">
+              <i class="wi wi-thermometer-exterior"><span class="min-daily-temp" style="font-family: 'open-sans', sans-serif;">14c</span></i>
+              <i class="wi wi-windy"><span class="wind" style="font-family: 'open-sans', sans-serif;">19km/h</span></i>
+            </p>
+      </div>
     </div>
   <!-- Daily Div Ends -->
 
   <!-- Map Div -->
     <div class="map-section">
-      <div class="map"></div>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1626.8742293102086!2d174.77904650761948!3d-41.28227747818922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d38afc6a424f09b%3A0x82cae35803460ec8!2sMaster%20Kong!5e0!3m2!1sen!2snz!4v1614032586490!5m2!1sen!2snz" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
       <div class="map-title"></div>
       <div class="expand"></div>
     </div>
   <!-- Map Div Ends -->
 
   <!-- Fav Fiv -->
-    <div class="favourite-section">
-    </div>
+    <div class="favourite-section"></div>
   <!-- Fav Div Ends -->
 
   <!-- Footer Div -->
@@ -49,6 +65,7 @@
   <!-- Footer Div Ends -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="js/custom.js" charset="utf-8"></script>
 </div>
 <!-- End of Mobile Container -->
 </body>
