@@ -134,7 +134,7 @@ border: none;
 .wi-thermometer,
 .wi-rain {
   float: right;
-  margin-top: 100px;
+  margin-top: 25px;
   font-size: 17px;
 }
 
@@ -155,8 +155,14 @@ border: none;
 .rain-mm {
   padding-left: 10px;
 }
+/*  Max Temp and Rain Icon Ends */
 
 /* Min Temp and Wind Icons */
+
+.wi-thermometer-exterior {
+padding-top: 20px;
+padding-left: 20px;
+}
 
 .min-daily-temp {
   padding-left: 10px;
@@ -169,8 +175,6 @@ border: none;
 
 .top-icons {
   font-family: 'open-sans', sans-serif;
-
-
 }
 
 .map-section {
@@ -178,6 +182,15 @@ border: none;
   height: 23.5vh;
   margin: 1vh;
   position: relative;
+}
+/* Min Temp and Wind Icons Ends */
+
+.current-temp {
+  font-family: 'open-sans', sans-serif;
+  font-size: 70px;
+  float: right;
+  padding-right: 20px;
+  color: #444444;
 }
 
 .map {
@@ -215,3 +228,27 @@ right: 0;
   background-color: purple;
   height: 120px;
 }
+
+/* Extra small devices (phones, 600px and down) */
+/* This applies css to */
+@media only screen and (max-width: 600px) {
+  .daily-section {
+    background-color: #87ceeb;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .daily-section {
+    background-color: blue;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
